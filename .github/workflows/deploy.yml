@@ -20,4 +20,4 @@ jobs:
       - name: building
         run: npm run build
       - name: deploy
-        run: npm run deploy --token ${{ secrets.GCLOUD_TOKEN }}
+        run: firebase deploy --token ${{ secrets.GCLOUD_TOKEN }}
