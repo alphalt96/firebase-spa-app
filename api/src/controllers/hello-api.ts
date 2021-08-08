@@ -13,7 +13,7 @@ class HelloController {
   sayHello (req: express.Request, res: express.Response) {
     this.helloService.getHello();
     res.status(200).json({
-      someMessage: 'hello'
+      someMessage: 'hello!'
     })
   }
 }
