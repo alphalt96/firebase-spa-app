@@ -5,15 +5,19 @@ on:
       - "master"
 jobs:
   build:
+    runs-on: ubuntu-latest
     env:
       FIREBASE_TOKEN: ${{ secrets.GCLOUD_TOKEN }}
-
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
     steps:
+      - name: Use node
+        run: node -v
       - uses: actions/checkout@v2
       - name: install dependencies
         run: npm i && npm i -g firebase-tools
       - name: building
-        run: npm run build:all
+        run: npm run build
       - name: deploy
         run: npm run deploy --token ${{ secrets.GCLOUD_TOKEN }}
