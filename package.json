@@ -6,8 +6,12 @@
   "scripts": {
     "serve:api": "cd api && npm run build:watch",
     "serve:app": "cd app && npm run build:watch",
+    "build:api": "cd api && npm i && npm run build",
+    "build:app": "cd app && npm i && npm run build",
     "emulator:start": "firebase emulators:start --only functions,hosting",
-    "serve": "npm-run-all -l -p serve:* emulator:start"
+    "serve": "npm-run-all -l -p serve:* emulator:start",
+    "build:all": "npm-run-all -l -p build:*",
+    "deploy": "firebase deploy"
   },
   "keywords": [],
   "author": "",
