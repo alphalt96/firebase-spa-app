@@ -1,5 +1,5 @@
-name: check linter
-on: push
+name: linter
+on: workflow_run
 jobs:
   check-linter:
     runs-on: ubuntu-latest
