@@ -1,4 +1,4 @@
-import { Hello } from '../shared/entities'
+import { Hello } from '../shared/entities';
 
 class HelloService {
   constructor(
@@ -11,4 +11,4 @@ class HelloService {
   }
 }
 
-export { HelloService }
+export { HelloService };

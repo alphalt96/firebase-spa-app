@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "semi": ["warn", "always"],
+    "quotes": ["warn", "single"],
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"]
+  },
+  "globals": {
+    "console": "readonly"
+  },
+  "extends": ["eslint:recommended"],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser"
+}

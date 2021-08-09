@@ -1,1 +1,1 @@
-export {accessLog} from './access-log'
+export {accessLog} from './access-log';

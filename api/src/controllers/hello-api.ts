@@ -1,6 +1,6 @@
 import { HelloService } from '../services';
 import * as express from 'express';
-import { accessLog } from '../shared/logs'
+import { accessLog } from '../shared/logs';
 
 class HelloController {
   constructor(
@@ -14,8 +14,8 @@ class HelloController {
     this.helloService.getHello();
     res.status(200).json({
       someMessage: 'hello!'
-    })
+    });
   }
 }
 
-export { HelloController }
+export { HelloController };
