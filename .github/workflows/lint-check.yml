@@ -10,8 +10,6 @@ jobs:
       - name: Use node
         run: node -v
       - uses: actions/checkout@v2
-      - name: installing typescript
-        run: npm i -g typescript
       - name: check linter api
         run: cd api && npm i && npm run lint
       - name: check linter app
