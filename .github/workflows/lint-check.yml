@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Use node
         run: node -v
+      - uses: actions/checkout@v2
       - name: check linter api
         run: cd api && npm i && npm run lint
       - name: check linter app
