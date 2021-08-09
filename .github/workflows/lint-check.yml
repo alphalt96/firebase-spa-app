@@ -1,0 +1,15 @@
+name: check linter
+on: push
+jobs:
+  check-linter:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - name: Use node
+        run: node -v
+      - name: check linter api
+        run: cd api && npm i && npm run lint
+      - name: check linter app
+        run: cd app && npm i && npm run lint

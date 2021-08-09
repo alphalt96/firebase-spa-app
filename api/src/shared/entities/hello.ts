@@ -9,4 +9,4 @@ class Hello {
   }
 }
 
-export { Hello }
+export { Hello };

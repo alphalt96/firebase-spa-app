@@ -19,6 +19,6 @@ export function accessLog (isActivate: boolean) {
         });
       }
       return targetFunction.apply(this, [req, res, next]);
-    }
-  }
+    };
+  };
 }
